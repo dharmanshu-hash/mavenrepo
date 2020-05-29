@@ -18,7 +18,7 @@ sh "mvn package"
         }  
 stage('tomcat'){
 steps{
-sh "scp /root/workspace/Pipeline-demo/target/studentapp-2.1.1-FEAT01-SNAPSHOT.war 3.82.215.95:/var/lib/tomcat/webapps"
+sh "scp /root/workspace/Pipeline-demo/target/studentapp-2.1.1-FEAT01-SNAPSHOT.war 34.201.53.99:/var/lib/tomcat/webapps"
 sh "mkdir $BUILD_NUMBER"
 }
      }
